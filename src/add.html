@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Change</title>
+    <link rel="stylesheet" href="../assets/css/newEntry.css">
+    <link rel="script">
+  </head>
+  <body>
+	<h2>Change Quantity(+,-)</h2>
+	<input id="addInput">
+	<button onclick="changeValue()" style="float: right;">Change</button>
+  </body>
+  <script>
+  	const Store = require('electron-store');
+	const store = new Store();
+  	const path = require('path')
+
+	name = localStorage.getItem('addItem')
+	name = name.toLowerCase().replace(/ /g,"-");
+
+	function changeValue(){
+		//localStorage.setItem('names','test')
+		var name2save = '';
+		quantity = document.getElementById('addInput').value;
+
+		if(quantity.charAt(0) === "-"){
+			name2save = name + ",";
+			quantity = quantity.slice(1);
+			if (parseFloat(localStorage.getItem(name)) - parseFloat(quantity) !== parseFloat(localStorage.getItem(name)) - parseFloat(quantity)){
+				console.log('it is NaN')
+				localStorage.setItem(name, 0 - parseFloat(quantity));
+			}
+			else {
+				console.log('it is not NaN')
+				localStorage.setItem(name, parseFloat(localStorage.getItem(name)) - parseFloat(quantity));
+
+			}
+
+		}
+		if(quantity.charAt(0) === "+"){
+			name2save = name + ",";
+			quantity = quantity.slice(1);
+			if (parseFloat(localStorage.getItem(name)) + parseFloat(quantity) !== parseFloat(localStorage.getItem(name)) + parseFloat(quantity)){
+				console.log('it is NaN')
+				localStorage.setItem(name, 0 + parseFloat(quantity));
+			}
+			else {
+				console.log('it is not NaN')
+				localStorage.setItem(name, parseFloat(localStorage.getItem(name)) + parseFloat(quantity));
+			}
+		}
+		var counter = 1;
+		var counter1 = 1;
+		console.log(localStorage.getItem(name))
+		nameArr = localStorage.getItem('names').split(',');
+		for(var i in nameArr){
+			counter1 += 1;
+			if(nameArr[i] !== name){
+				console.log('in1')
+				counter += 1;
+			}
+		}
+		console.log('c: ' + counter + " c1: " + counter1)
+		if(counter === counter1){
+			console.log('in2')
+			localStorage.setItem('names', localStorage.getItem('names') + name2save);
+		}
+		localStorage.setItem('counter', counter);
+		console.log(localStorage.getItem('names'))
+  	}
+
+	var counter = 0;
+function checkTheme(){
+    if(store.get('theme') === -1){
+        if(counter === 0){
+            console.log('darkTheme')
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.id = 'theme'
+            link.href = '../assets/css/dark-theme.css';
+            link.media = 'all';
+            head.appendChild(link);
+            counter += 1;
+        }
+        else {
+            document.getElementById('theme').href = '../assets/css/dark-theme.css';
+        }
+    }
+
+    else {
+        try{
+            document.getElementById('theme').href = '';
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+}
+
+checkTheme()
+
+setInterval(checkTheme, 1000);
+  </script>
+</html>

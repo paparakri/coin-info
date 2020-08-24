@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Coin Info</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="script">
+  </head>
+  <body>
+
+    <div id="foo">
+      <span class="letter" data-letter="C">C</span>
+      <span class="letter" data-letter="O">O</span>
+      <span class="letter" data-letter="I">I</span>
+      <span class="letter" data-letter="N">N</span>
+      <div  class="divider"></div>
+      <span class="letter" data-letter="I">I</span>
+      <span class="letter" data-letter="N">N</span>
+      <span class="letter" data-letter="F">F</span>
+      <span class="letter" data-letter="O">O</span>
+    </div>
+
+    <div id="sidenav">
+        <div class="search">
+            <div class="ui form">
+                <div class="required eight wide field">
+                    <div class="ui action input">
+                      <input type="text" id="myInput" placehold="Name">
+                      <button id="searchButton" onclick="searchFunction()" value="search">Search</button>
+                    </div>      
+                 </div>  
+            </div>
+        </div>
+
+        <ul id="myUL">
+          <li><button class="cryptoCur" id=Button0 onclick="reply_click(this.id)" value="Substratum">Substratum</button></li>
+          <li><button class="cryptoCur" id=Button1 onclick="reply_click(this.id)" value="Bitcoin">Bitcoin</button></li>
+          <li><button class="cryptoCur" id=Button2 onclick="reply_click(this.id)" value="Ethereum">Ethereum</button></li>
+          <li><button class="cryptoCur" id=Button3 onclick="reply_click(this.id)" value="Ripple">Ripple</button></li>
+          <li><button class="cryptoCur" id=Button4 onclick="reply_click(this.id)" value="Bitcoin Cash">Bitcoin Cash</button></li>
+          <li><button class="cryptoCur" id=Button5 onclick="reply_click(this.id)" value="EOS">EOS</button></li>
+          <li><button class="cryptoCur" id=Button6 onclick="reply_click(this.id)" value="Cardano">Cardano</button></li>
+          <li><button class="cryptoCur" id=Button7 onclick="reply_click(this.id)" value="Stellar">Stellar</button></li>
+          <li><button class="cryptoCur" id=Button8 onclick="reply_click(this.id)" value="TRON">TRON</button></li>
+          <li><button class="cryptoCur" id=Button9 onclick="reply_click(this.id)" value="NEO">NEO</button></li>
+          <li><button class="cryptoCur" id=Button10 onclick="reply_click(this.id)" value="Monero">Monero</button></li>
+          <li><button class="cryptoCur" id=Button11 onclick="reply_click(this.id)" value="NEM">NEM</button></li>
+          <li><button class="cryptoCur" id=Button12 onclick="reply_click(this.id)" value="Tether">Tether</button></li>
+          <li><button class="cryptoCur" id=Button13 onclick="reply_click(this.id)" value="VeChain">VeChain</button></li>
+          <li><button class="cryptoCur" id=Button14 onclick="reply_click(this.id)" value="Ethereum Classic">Ethereum Classic</button></li>
+          <li><button class="cryptoCur" id=Button15 onclick="reply_click(this.id)" value="Qtum">Qtum</button></li>
+          <li><button class="cryptoCur" id=Button16 onclick="reply_click(this.id)" value="OmiseGO">OmiseGO</button></li>
+          <li><button class="cryptoCur" id=Button17 onclick="reply_click(this.id)" value="Binance Coin">Binance Coin</button></li>
+          <li><button class="cryptoCur" id=Button18 onclick="reply_click(this.id)" value="Bitcoin Gold">Bitcoin Gold</button></li>
+          <li><button class="cryptoCur" id=Button19 onclick="reply_click(this.id)" value="Nano">Nano</button></li>
+          <li><button class="cryptoCur" id=Button20 onclick="reply_click(this.id)" value="Aeternity">Aeternity</button></li>
+          <li><button class="cryptoCur" id=Button21 onclick="reply_click(this.id)" value="Bytecoin">Bytecoin</button></li>
+          <li><button class="cryptoCur" id=Button22 onclick="reply_click(this.id)" value="Bytom">Bytom</button></li>
+          <li><button class="cryptoCur" id=Button23 onclick="reply_click(this.id)" value="Steem">Steem</button></li>
+          <li><button class="cryptoCur" id=Button24 onclick="reply_click(this.id)" value="BitShares">BitShares</button></li>
+          <li><button class="cryptoCur" id=Button25 onclick="reply_click(this.id)" value="Ontology">Ontology</button></li>
+          <li><button class="cryptoCur" id=Button26 onclick="reply_click(this.id)" value="Siacoin">Siacoin</button></li>
+          <li><button class="cryptoCur" id=Button27 onclick="reply_click(this.id)" value="Populous">Populous</button></li>
+          <li><button class="cryptoCur" id=Button28 onclick="reply_click(this.id)" value="Bitcoin Private">Bitcoin Private</button></li>
+          <li><button class="cryptoCur" id=Button29 onclick="reply_click(this.id)" value="Wanchain">Wanchain</button></li>
+          <li><button class="cryptoCur" id=Button30 onclick="reply_click(this.id)" value="Bitcoin Diamond">Bitcoin Diamond</button></li>
+          <li><button class="cryptoCur" id=Button31 onclick="reply_click(this.id)" value="Zilliqa">Zilliqa</button></li>
+          <li><button class="cryptoCur" id=Button32 onclick="reply_click(this.id)" value="Stratis">Stratis</button></li>
+          <li><button class="cryptoCur" id=Button33 onclick="reply_click(this.id)" value="Waves">Waves</button></li>
+          <li><button class="cryptoCur" id=Button34 onclick="reply_click(this.id)" value="Maker">Maker</button></li>
+          <li><button class="cryptoCur" id=Button35 onclick="reply_click(this.id)" value="RChain">RChain</button></li>
+          <li><button class="cryptoCur" id=Button36 onclick="reply_click(this.id)" value="0x">0x</button></li>
+          <li><button class="cryptoCur" id=Button37 onclick="reply_click(this.id)" value="Decred">Decred</button></li>
+          <li><button class="cryptoCur" id=Button38 onclick="reply_click(this.id)" value="Dogecoin">Dogecoin</button></li>
+          <li><button class="cryptoCur" id=Button39 onclick="reply_click(this.id)" value="Status">Status</button></li>
+          <li><button class="cryptoCur" id=Button40 onclick="reply_click(this.id)" value="DigixDAO">DigixDAO</button></li>
+          <li><button class="cryptoCur" id=Button41 onclick="reply_click(this.id)" value="Loopring">Loopring</button></li>
+          <li><button class="cryptoCur" id=Button42 onclick="reply_click(this.id)" value="aelf">aelf</button></li>
+          <li><button class="cryptoCur" id=Button43 onclick="reply_click(this.id)" value="Mixin">Mixin</button></li>
+          <li><button class="cryptoCur" id=Button44 onclick="reply_click(this.id)" value="Basic Attention Token">Basic Attention Token</button></li>
+          <li><button class="cryptoCur" id=Button45 onclick="reply_click(this.id)" value="Aion">Aion</button></li>
+          <li><button class="cryptoCur" id=Button46 onclick="reply_click(this.id)" value="Hshare">Hshare</button></li>
+          <li><button class="cryptoCur" id=Button47 onclick="reply_click(this.id)" value="Golem Network Tokens">Golem Network Tokens</button></li>
+          <li><button class="cryptoCur" id=Button48 onclick="reply_click(this.id)" value="Waltonchain">Waltonchain</button></li>
+          <li><button class="cryptoCur" id=Button49 onclick="reply_click(this.id)" value="IOStoken">IOStoken</button></li>
+          <li><button class="cryptoCur" id=Button50 onclick="reply_click(this.id)" value="Augur">Augur</button></li>
+          <li><button class="cryptoCur" id=Button51 onclick="reply_click(this.id)" value="DigiByte">DigiByte</button></li>
+          <li><button class="cryptoCur" id=Button52 onclick="reply_click(this.id)" value="Komodo">Komodo</button></li>
+          <li><button class="cryptoCur" id=Button53 onclick="reply_click(this.id)" value="Ardor">Ardor</button></li>
+          <li><button class="cryptoCur" id=Button54 onclick="reply_click(this.id)" value="Ark">Ark</button></li>
+          <li><button class="cryptoCur" id=Button55 onclick="reply_click(this.id)" value="Kyber Network">Kyber Network</button></li>
+          <li><button class="cryptoCur" id=Button56 onclick="reply_click(this.id)" value="Mithril">Mithril</button></li>
+          <li><button class="cryptoCur" id=Button57 onclick="reply_click(this.id)" value="PIVX">PIVX</button></li>
+          <li><button class="cryptoCur" id=Button58 onclick="reply_click(this.id)" value="Nebulas">Nebulas</button></li>
+          <li><button class="cryptoCur" id=Button59 onclick="reply_click(this.id)" value="Centrality">Centrality</button></li>
+          <li><button class="cryptoCur" id=Button60 onclick="reply_click(this.id)" value="Cortex">Cortex</button></li>
+          <li><button class="cryptoCur" id=Button61 onclick="reply_click(this.id)" value="KuCoin Shares">KuCoin Shares</button></li>
+          <li><button class="cryptoCur" id=Button62 onclick="reply_click(this.id)" value="MonaCoin">MonaCoin</button></li>
+          <li><button class="cryptoCur" id=Button63 onclick="reply_click(this.id)" value="QASH">QASH</button></li>
+          <li><button class="cryptoCur" id=Button64 onclick="reply_click(this.id)" value="Gas">Gas</button></li>
+          <li><button class="cryptoCur" id=Button65 onclick="reply_click(this.id)" value="Syscoin">Syscoin</button></li>
+          <li><button class="cryptoCur" id=Button66 onclick="reply_click(this.id)" value="Cryptonex">Cryptonex</button></li>
+          <li><button class="cryptoCur" id=Button67 onclick="reply_click(this.id)" value="Ethos">Ethos</button></li>
+          <li><button class="cryptoCur" id=Button68 onclick="reply_click(this.id)" value="Dragonchain">Dragonchain</button></li>
+          <li><button class="cryptoCur" id=Button69 onclick="reply_click(this.id)" value="Storm">Storm</button></li>
+          <li><button class="cryptoCur" id=Button70 onclick="reply_click(this.id)" value="ReddCoin">ReddCoin</button></li>
+          <li><button class="cryptoCur" id=Button71 onclick="reply_click(this.id)" value="Pundi X">Pundi X</button></li>
+          <li><button class="cryptoCur" id=Button72 onclick="reply_click(this.id)" value="Factom">Factom</button></li>
+          <li><button class="cryptoCur" id=Button73 onclick="reply_click(this.id)" value="Dentacoin">Dentacoin</button></li>
+          <li><button class="cryptoCur" id=Button74 onclick="reply_click(this.id)" value="GXChain">GXChain</button></li>
+          <li><button class="cryptoCur" id=Button75 onclick="reply_click(this.id)" value="Elastos">Elastos</button></li>
+          <li><button class="cryptoCur" id=Button76 onclick="reply_click(this.id)" value="SALT">SALT</button></li>
+          <li><button class="cryptoCur" id=Button77 onclick="reply_click(this.id)" value="Bancor">Bancor</button></li>
+          <li><button class="cryptoCur" id=Button78 onclick="reply_click(this.id)" value="Nxt">Nxt</button></li>
+          <li><button class="cryptoCur" id=Button79 onclick="reply_click(this.id)" value="FunFair">FunFair</button></li>
+          <li><button class="cryptoCur" id=Button80 onclick="reply_click(this.id)" value="Gifto">Gifto</button></li>
+          <li><button class="cryptoCur" id=Button81 onclick="reply_click(this.id)" value="WAX">WAX</button></li>
+          <li><button class="cryptoCur" id=Button82 onclick="reply_click(this.id)" value="Power Ledger">Power Ledger</button></li>
+          <li><button class="cryptoCur" id=Button83 onclick="reply_click(this.id)" value="Veritaseum">Veritaseum</button></li>
+          <li><button class="cryptoCur" id=Button84 onclick="reply_click(this.id)" value="ZCoin">ZCoin</button></li>
+          <li><button class="cryptoCur" id=Button85 onclick="reply_click(this.id)" value="Fusion">Fusion</button></li>
+          <li><button class="cryptoCur" id=Button86 onclick="reply_click(this.id)" value="Enigma">Enigma</button></li>
+          <li><button class="cryptoCur" id=Button87 onclick="reply_click(this.id)" value="Nucleus Vision">Nucleus Vision</button></li>
+          <li><button class="cryptoCur" id=Button88 onclick="reply_click(this.id)" value="Neblio">Neblio</button></li>
+          <li><button class="cryptoCur" id=Button89 onclick="reply_click(this.id)" value="ChainLink">ChainLink</button></li>
+          <li><button class="cryptoCur" id=Button90 onclick="reply_click(this.id)" value="Decentraland">Decentraland</button></li>
+          <li><button class="cryptoCur" id=Button91 onclick="reply_click(this.id)" value="Request Network">Request Network</button></li>
+          <li><button class="cryptoCur" id=Button92 onclick="reply_click(this.id)" value="Monaco">Monaco</button></li>
+          <li><button class="cryptoCur" id=Button93 onclick="reply_click(this.id)" value="Litecoin">Litecoin</button></li>
+        </ul>
+    </div>
+
+    <script>
+        counter = 0;
+        var input1, filter1, ul1, li1, a1, i1;
+        input1 = document.getElementById('myInput');
+        filter1 = input1.value.toUpperCase();
+        ul1 = document.getElementById("myUL");
+        li1 = ul1.getElementsByTagName('li');
+
+        for (i1 = 0; i1 < li1.length; i1++) {
+            li1[i1].style.display = "none";
+        }
+
+
+        function searchFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("button")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+                if (filter == ""){
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        const Coinmarketcap = require('node-coinmarketcap-api');
+        const coinmarketcap = new Coinmarketcap();
+        var cryptoName = '';
+
+        function reply_click(buttonID){
+          document.getElementById('foo').style.paddingTop = '0px';
+          try{
+            var chart = document.getElementsByClassName("ccc-widget")[0]
+            chart.parentNode.removeChild(chart);
+          }
+          catch(error) {
+            counter++;
+          }
+
+          for (i1 = 0; i1 < li1.length; i1++) {
+              li1[i1].style.display = "none";
+          }
+          var buttonElement = document.getElementById(buttonID);
+          cryptoName = buttonElement.value;
+          cryptoName = cryptoName.toLowerCase().replace(/ /g,"-");
+          localStorage.setItem('cryptoName', cryptoName);
+
+          (async () => {
+            let coinInfo = await coinmarketcap.ticker(cryptoName);
+
+            window.symbol = coinInfo[0]['symbol'];
+            document.getElementById("cryptoName").innerHTML = coinInfo[0]['name'];
+            document.getElementById("marketCap").innerHTML = "Market Cap: $" + parseFloat(coinInfo[0]['market_cap_usd']) + "  ";
+            document.getElementById("priceInUSD").innerHTML = "( $" + parseFloat(coinInfo[0]['price_usd']) + " )";
+            document.getElementById("updateButton").style.visibility = "visible";
+            document.getElementById("coinLogo").style.visibility = "visible";
+            document.getElementById("coinLogo").src = "../pictures/" + coinInfo[0]['symbol'] + ".png";
+
+            document.getElementById("av_supply").innerHTML = '<a href="#"><span> Total amount of coins in existence right now (minus any coins that have been verifiably burned).</span> <u>Available Supply:</u></a>' + coinInfo[0]['available_supply'];
+            document.getElementById("rank").innerHTML = "<u>Rank:</u> " + coinInfo[0]['rank'];
+            if (coinInfo[0]['max_supply'] == null){
+              document.getElementById("max_supply").innerHTML = '<a href="#"><span>Max Supply is the best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.</span> <u>Max Supply:</u></a> N/A';
+              document.getElementById("supply_perc").innerHTML = '<a href="#"> <span> Total Supply / Max Supply </span> <u>Supply Percentage:</u> </a> N/A';
+            } else {
+              document.getElementById("max_supply").innerHTML = '<a href="#"><span>Max Supply is the best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.</span> <u>Max Supply:</u></a>' + coinInfo[0]['max_supply'];
+              document.getElementById("supply_perc").innerHTML = '<a href="#"> <span> Total Supply / Max Supply </span> <u>Supply Percentage:</u> </a>' + parseInt(100*parseFloat(coinInfo[0]['available_supply'])/parseFloat(coinInfo[0]['max_supply'])) + "%";
+            }
+
+            document.getElementById("symbol").innerHTML = coinInfo[0]['symbol'];
+            if (coinInfo[0]['percent_change_24h'].indexOf('-') > -1){
+                document.getElementById("change").innerHTML = "(Percent Change in the Last 24h: " + coinInfo[0]['percent_change_24h'] + "%)";
+                document.getElementById("change").style.color = 'red';
+            } else {
+                document.getElementById("change").innerHTML = "(Percent Change in the Last 24h: +" + coinInfo[0]['percent_change_24h'] + "%)";
+                document.getElementById("change").style.color = 'green';
+            }
+
+            var logo = document.getElementsByClassName("letter");
+            while (logo.length > 0){
+              logo[0].parentNode.removeChild(logo[0]);
+            }
+
+            makeSidNav()
+
+
+            //Chart
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var theUrl = baseUrl+'serve/v1/coin/header?fsym=' + window.symbol + '&tsyms=USD,EUR';
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            (function (){
+              var appName = encodeURIComponent(window.location.hostname);
+              if(appName==""){appName="local";}
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+              embedder.parentNode.appendChild(s);
+            })();
+
+            var targetBold = document.getElementsByClassName("ccc-label-chart")[0];
+            //Chart
+
+
+          })();
+        }
+    </script>
+
+  <div id="main">
+    <h2 id="cryptoName"> </h1><h2 id="priceInUSD"></h2> <h3 id="symbol"></h3> <div class="divider"></div><img id="coinLogo">
+    <br>
+    <br>
+    <h3 id="marketCap"></h3> <h5 id="change"></h5>
+  
+    <footer>
+      <div class="floatLeft">
+        <h4 id="av_supply">
+        </h4>
+       
+        <h4 id="rank"></h4>
+      </div>
+      <div class="floatRight">
+        <h4 id="max_supply">
+        </h4>
+
+        <h4 id="supply_perc">
+        </h4>
+      </div>
+    </footer>
+
+    <button id="updateButton" onclick="reload()">Update Inforamtion</button>
+    <script src="index.js"></script>
+  </div>
+  
+  </body>
+</html>

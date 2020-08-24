@@ -1,0 +1,236 @@
+div.floatLeft  h4 a, div.floatRight a  {
+  text-decoration:none;
+}
+
+div.floatLeft a:hover, div.floatRight a:hover {
+  color: #666666;
+  background: #FFFFCC;
+  text-decoration: none;
+}
+span {
+  display: none;
+}
+
+div.floatLeft h4 a:hover span, div.floatRight h4 a:hover span {
+  display: block;
+  position: absolute;
+  left: 10%;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  z-index: 100;
+  color: white;
+  background: gray;
+  font: 10px Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 1px solid #666666;
+  text-decoration: none;
+}
+
+div.floatLeft h4, div.floatRight h4 {
+  position:relative;
+}
+
+
+#myInput {
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    font-size: 16px; /* Increase font-size */
+    width: 35%;
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+footer {
+  bottom: 0%;
+  position: fixed;
+}
+
+#symbol {
+  display: inline;
+}
+#change {
+  display: inline;
+}
+
+.ccc-coin-container {
+  visibility: hidden;
+}
+
+.ccc-chart {
+  zoom:200%;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 30px;
+}
+
+.ccc-widget {
+  zoom: 150%;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: block;
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-right: 180px;
+  float: left;
+  pointer-events: none;
+  cursor: default;
+}
+
+#gobtc-widget-chart {
+  visibility: hidden;
+}
+
+#coinLogo {
+  visibility: hidden;
+  margin-top: 
+}
+
+.search{
+    text-align: center;
+}
+
+#updateButton{
+    visibility: hidden;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+#main {
+    margin-left: 330px;
+    padding: 20px;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li button {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#infoLink {
+    visibility: hidden;
+}
+
+button {
+    background-color: white;
+    border: 1px solid silver;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button.cryptoCur {
+    width: 100%;
+    text-align: left;
+}
+
+#cryptoName, #priceInUSD, #marketCap, #infoHeader{
+    display: inline;
+}
+
+#marketCap {
+    text-indent: 20px;
+}
+
+.divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+} 
+
+
+/*Header Snippet*/
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+#foo {
+  padding-top: 100px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 300%;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}

@@ -1,0 +1,88 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+.ccc-widget {
+	background: #303030 !important;
+}
+
+button {
+    background-color: #424242 !important; /* Grey background color */
+    color: gray !important; /* Add a black text color */
+    margin-top: 6px !important;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 16px !important;
+	background-color: #303030 !important;
+	color: gray;
+}
+
+.simple-container {
+	max-width: 675px !important;
+	margin: 0 auto !important;
+	padding-top: 70px !important;
+	padding-bottom: 20px !important;
+}
+
+p {
+	font-size: 16px !important;
+}
+
+h1 {
+	font-size: 30px !important;
+	line-height: 34px !important;
+}
+
+h2 {
+	font-size: 20px !important;
+	line-height: 25px !important;
+}
+
+h3 {
+	font-size: 16px !important;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+hr {
+	height: 1px !important;
+	background-color: #d8d8d8 !important;
+	border: none !important;
+	width: 100% !important;
+	margin: 0px !important;
+}
+
+a[href] {
+	color: #1e8ad6 !important;
+}
+
+a[href]:hover {
+	color: #3ba0e6 !important;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+li {
+	line-height: 1.5em !important;
+}
+
+aside,
+[class *= "sideNav"],
+[id *= "sideNave"] {
+	margin: 0 auto !important;
+	border: 1px solid lightgrey !important;
+	padding: 5px 15px !important;
+}
+
+@media (min-width: 1921px) {
+	body {
+		font-size: 18px !important;
+	}
+}

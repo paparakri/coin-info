@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>New Entry</title>
+    <link rel="stylesheet" href="../assets/css/newEntry.css">
+    <link rel="script">
+  </head>
+  <body>
+	<input type="text" id="portInput" onkeyup="portFunction()" placeholder="Search for coins..">
+
+	<ul id="portUL">
+	  <li><button class="cryptoCur" id=Button0 onclick="port_click(this.value)" value="Substratum">Substratum</button></li>
+	  <li><button class="cryptoCur" id=Button1 onclick="port_click(this.value)" value="Bitcoin">Bitcoin</button></li>
+	  <li><button class="cryptoCur" id=Button2 onclick="port_click(this.value)" value="Ethereum">Ethereum</button></li>
+	  <li><button class="cryptoCur" id=Button3 onclick="port_click(this.value)" value="Ripple">Ripple</button></li>
+	  <li><button class="cryptoCur" id=Button4 onclick="port_click(this.value)" value="Bitcoin Cash">Bitcoin Cash</button></li>
+	  <li><button class="cryptoCur" id=Button5 onclick="port_click(this.value)" value="EOS">EOS</button></li>
+	  <li><button class="cryptoCur" id=Button6 onclick="port_click(this.value)" value="Cardano">Cardano</button></li>
+	  <li><button class="cryptoCur" id=Button7 onclick="port_click(this.value)" value="Stellar">Stellar</button></li>
+	  <li><button class="cryptoCur" id=Button8 onclick="port_click(this.value)" value="TRON">TRON</button></li>
+	  <li><button class="cryptoCur" id=Button9 onclick="port_click(this.value)" value="NEO">NEO</button></li>
+	  <li><button class="cryptoCur" id=Button10 onclick="port_click(this.value)" value="Monero">Monero</button></li>
+	  <li><button class="cryptoCur" id=Button11 onclick="port_click(this.value)" value="NEM">NEM</button></li>
+	  <li><button class="cryptoCur" id=Button12 onclick="port_click(this.value)" value="Tether">Tether</button></li>
+	  <li><button class="cryptoCur" id=Button13 onclick="port_click(this.value)" value="VeChain">VeChain</button></li>
+	  <li><button class="cryptoCur" id=Button14 onclick="port_click(this.value)" value="Ethereum Classic">Ethereum Classic</button></li>
+	  <li><button class="cryptoCur" id=Button15 onclick="port_click(this.value)" value="Qtum">Qtum</button></li>
+	  <li><button class="cryptoCur" id=Button16 onclick="port_click(this.value)" value="OmiseGO">OmiseGO</button></li>
+	  <li><button class="cryptoCur" id=Button17 onclick="port_click(this.value)" value="Binance Coin">Binance Coin</button></li>
+	  <li><button class="cryptoCur" id=Button18 onclick="port_click(this.value)" value="Bitcoin Gold">Bitcoin Gold</button></li>
+	  <li><button class="cryptoCur" id=Button19 onclick="port_click(this.value)" value="Nano">Nano</button></li>
+	  <li><button class="cryptoCur" id=Button20 onclick="port_click(this.value)" value="Aeternity">Aeternity</button></li>
+	  <li><button class="cryptoCur" id=Button21 onclick="port_click(this.value)" value="Bytecoin">Bytecoin</button></li>
+	  <li><button class="cryptoCur" id=Button22 onclick="port_click(this.value)" value="Bytom">Bytom</button></li>
+	  <li><button class="cryptoCur" id=Button23 onclick="port_click(this.value)" value="Steem">Steem</button></li>
+	  <li><button class="cryptoCur" id=Button24 onclick="port_click(this.value)" value="BitShares">BitShares</button></li>
+	  <li><button class="cryptoCur" id=Button25 onclick="port_click(this.value)" value="Ontology">Ontology</button></li>
+	  <li><button class="cryptoCur" id=Button26 onclick="port_click(this.value)" value="Siacoin">Siacoin</button></li>
+	  <li><button class="cryptoCur" id=Button27 onclick="port_click(this.value)" value="Populous">Populous</button></li>
+	  <li><button class="cryptoCur" id=Button28 onclick="port_click(this.value)" value="Bitcoin Private">Bitcoin Private</button></li>
+	  <li><button class="cryptoCur" id=Button29 onclick="port_click(this.value)" value="Wanchain">Wanchain</button></li>
+	  <li><button class="cryptoCur" id=Button30 onclick="port_click(this.value)" value="Bitcoin Diamond">Bitcoin Diamond</button></li>
+	  <li><button class="cryptoCur" id=Button31 onclick="port_click(this.value)" value="Zilliqa">Zilliqa</button></li>
+	  <li><button class="cryptoCur" id=Button32 onclick="port_click(this.value)" value="Stratis">Stratis</button></li>
+	  <li><button class="cryptoCur" id=Button33 onclick="port_click(this.value)" value="Waves">Waves</button></li>
+	  <li><button class="cryptoCur" id=Button34 onclick="port_click(this.value)" value="Maker">Maker</button></li>
+	  <li><button class="cryptoCur" id=Button35 onclick="port_click(this.value)" value="RChain">RChain</button></li>
+	  <li><button class="cryptoCur" id=Button36 onclick="port_click(this.value)" value="0x">0x</button></li>
+	  <li><button class="cryptoCur" id=Button37 onclick="port_click(this.value)" value="Decred">Decred</button></li>
+	  <li><button class="cryptoCur" id=Button38 onclick="port_click(this.value)" value="Dogecoin">Dogecoin</button></li>
+	  <li><button class="cryptoCur" id=Button39 onclick="port_click(this.value)" value="Status">Status</button></li>
+	  <li><button class="cryptoCur" id=Button40 onclick="port_click(this.value)" value="DigixDAO">DigixDAO</button></li>
+	  <li><button class="cryptoCur" id=Button41 onclick="port_click(this.value)" value="Loopring">Loopring</button></li>
+	  <li><button class="cryptoCur" id=Button42 onclick="port_click(this.value)" value="aelf">aelf</button></li>
+	  <li><button class="cryptoCur" id=Button43 onclick="port_click(this.value)" value="Mixin">Mixin</button></li>
+	  <li><button class="cryptoCur" id=Button44 onclick="port_click(this.value)" value="Basic Attention Token">Basic Attention Token</button></li>
+	  <li><button class="cryptoCur" id=Button45 onclick="port_click(this.value)" value="Aion">Aion</button></li>
+	  <li><button class="cryptoCur" id=Button46 onclick="port_click(this.value)" value="Hshare">Hshare</button></li>
+	  <li><button class="cryptoCur" id=Button47 onclick="port_click(this.value)" value="Golem Network Tokens">Golem Network Tokens</button></li>
+	  <li><button class="cryptoCur" id=Button48 onclick="port_click(this.value)" value="Waltonchain">Waltonchain</button></li>
+	  <li><button class="cryptoCur" id=Button49 onclick="port_click(this.value)" value="IOStoken">IOStoken</button></li>
+	  <li><button class="cryptoCur" id=Button50 onclick="port_click(this.value)" value="Augur">Augur</button></li>
+	  <li><button class="cryptoCur" id=Button51 onclick="port_click(this.value)" value="DigiByte">DigiByte</button></li>
+	  <li><button class="cryptoCur" id=Button52 onclick="port_click(this.value)" value="Komodo">Komodo</button></li>
+	  <li><button class="cryptoCur" id=Button53 onclick="port_click(this.value)" value="Ardor">Ardor</button></li>
+	  <li><button class="cryptoCur" id=Button54 onclick="port_click(this.value)" value="Ark">Ark</button></li>
+	  <li><button class="cryptoCur" id=Button55 onclick="port_click(this.value)" value="Kyber Network">Kyber Network</button></li>
+	  <li><button class="cryptoCur" id=Button56 onclick="port_click(this.value)" value="Mithril">Mithril</button></li>
+	  <li><button class="cryptoCur" id=Button57 onclick="port_click(this.value)" value="PIVX">PIVX</button></li>
+	  <li><button class="cryptoCur" id=Button58 onclick="port_click(this.value)" value="Nebulas">Nebulas</button></li>
+	  <li><button class="cryptoCur" id=Button59 onclick="port_click(this.value)" value="Centrality">Centrality</button></li>
+	  <li><button class="cryptoCur" id=Button60 onclick="port_click(this.value)" value="Cortex">Cortex</button></li>
+	  <li><button class="cryptoCur" id=Button61 onclick="port_click(this.value)" value="KuCoin Shares">KuCoin Shares</button></li>
+	  <li><button class="cryptoCur" id=Button62 onclick="port_click(this.value)" value="MonaCoin">MonaCoin</button></li>
+	  <li><button class="cryptoCur" id=Button63 onclick="port_click(this.value)" value="QASH">QASH</button></li>
+	  <li><button class="cryptoCur" id=Button64 onclick="port_click(this.value)" value="Gas">Gas</button></li>
+	  <li><button class="cryptoCur" id=Button65 onclick="port_click(this.value)" value="Syscoin">Syscoin</button></li>
+	  <li><button class="cryptoCur" id=Button66 onclick="port_click(this.value)" value="Cryptonex">Cryptonex</button></li>
+	  <li><button class="cryptoCur" id=Button67 onclick="port_click(this.value)" value="Ethos">Ethos</button></li>
+	  <li><button class="cryptoCur" id=Button68 onclick="port_click(this.value)" value="Dragonchain">Dragonchain</button></li>
+	  <li><button class="cryptoCur" id=Button69 onclick="port_click(this.value)" value="Storm">Storm</button></li>
+	  <li><button class="cryptoCur" id=Button70 onclick="port_click(this.value)" value="ReddCoin">ReddCoin</button></li>
+	  <li><button class="cryptoCur" id=Button71 onclick="port_click(this.value)" value="Pundi X">Pundi X</button></li>
+	  <li><button class="cryptoCur" id=Button72 onclick="port_click(this.value)" value="Factom">Factom</button></li>
+	  <li><button class="cryptoCur" id=Button73 onclick="port_click(this.value)" value="Dentacoin">Dentacoin</button></li>
+	  <li><button class="cryptoCur" id=Button74 onclick="port_click(this.value)" value="GXChain">GXChain</button></li>
+	  <li><button class="cryptoCur" id=Button75 onclick="port_click(this.value)" value="Elastos">Elastos</button></li>
+	  <li><button class="cryptoCur" id=Button76 onclick="port_click(this.value)" value="SALT">SALT</button></li>
+	  <li><button class="cryptoCur" id=Button77 onclick="port_click(this.value)" value="Bancor">Bancor</button></li>
+	  <li><button class="cryptoCur" id=Button78 onclick="port_click(this.value)" value="Nxt">Nxt</button></li>
+	  <li><button class="cryptoCur" id=Button79 onclick="port_click(this.value)" value="FunFair">FunFair</button></li>
+	  <li><button class="cryptoCur" id=Button80 onclick="port_click(this.value)" value="Gifto">Gifto</button></li>
+	  <li><button class="cryptoCur" id=Button81 onclick="port_click(this.value)" value="WAX">WAX</button></li>
+	  <li><button class="cryptoCur" id=Button82 onclick="port_click(this.value)" value="Power Ledger">Power Ledger</button></li>
+	  <li><button class="cryptoCur" id=Button83 onclick="port_click(this.value)" value="Veritaseum">Veritaseum</button></li>
+	  <li><button class="cryptoCur" id=Button84 onclick="port_click(this.value)" value="ZCoin">ZCoin</button></li>
+	  <li><button class="cryptoCur" id=Button85 onclick="port_click(this.value)" value="Fusion">Fusion</button></li>
+	  <li><button class="cryptoCur" id=Button86 onclick="port_click(this.value)" value="Enigma">Enigma</button></li>
+	  <li><button class="cryptoCur" id=Button87 onclick="port_click(this.value)" value="Nucleus Vision">Nucleus Vision</button></li>
+	  <li><button class="cryptoCur" id=Button88 onclick="port_click(this.value)" value="Neblio">Neblio</button></li>
+	  <li><button class="cryptoCur" id=Button89 onclick="port_click(this.value)" value="ChainLink">ChainLink</button></li>
+	  <li><button class="cryptoCur" id=Button90 onclick="port_click(this.value)" value="Decentraland">Decentraland</button></li>
+	  <li><button class="cryptoCur" id=Button91 onclick="port_click(this.value)" value="Request Network">Request Network</button></li>
+	  <li><button class="cryptoCur" id=Button92 onclick="port_click(this.value)" value="Monaco">Monaco</button></li>
+	</ul>
+
+  </body>
+  <script src="newEntry.js"></script>
+</html>

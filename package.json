@@ -1,0 +1,29 @@
+{
+  "name": "coin-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.coinInfo",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.0-beta.8",
+    "electron-builder": "^20.13.3",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "postinstall": "electron-builder install-app-deps",
+  "dependencies": {
+    "async": "^2.6.0",
+    "node-coinmarketcap-api": "^1.0.4"
+  }
+}

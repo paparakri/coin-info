@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#av_supply, #title, #tot_supply, #max_supply, #supply_perc, #change{
+    display: inline;
+}
+
+body{
+    background: #dfdfdf;
+    color: #000;
+    overflow: hidden;
+}
+
+.row{
+    background: #c3c3c3;
+    margin:0px;
+    padding: 20px;
+    text-transform: uppercase;
+    -webkit-app-region: drag;
+}
+
+html, body{
+    background: rgba(226, 226, 226, 0.5);
+    height: 100%;
+}
+
+button {
+    background-color: white; /* Green */
+    border: 1px solid silver;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
